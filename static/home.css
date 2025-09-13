@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #78a541, #a943a8);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Positioning */
+.top-center {
+  margin-bottom: 30px;
+}
+
+.top-center h1 {
+  font-size: 2rem;
+  color: #444;
+}
+
+/* Main Content Center */
+.center-content {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Headline Styling */
+.center-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Button Styling */
+.button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Hover Effect */
+.button:hover {
+  background-color: #e8435f;
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .center-content {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .top-center h1,
+  .center-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
